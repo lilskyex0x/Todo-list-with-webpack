@@ -50,7 +50,7 @@
 
 > Add a link to your deployed project.
 
-- [To-do list](https://lilskyex0x.github.io/To-Do-list/)
+- [To-do list](https://lilskyex0x.github.io/Todo-list-with-webpack/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
