@@ -66,7 +66,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/lilskyex0x/To-Do-list.git
+  git clone https://github.com/lilskyex0x/Todo-list-with-webpack.git
 ```
 
 ### Install
@@ -75,7 +75,7 @@ Install this project with:
 
 ```sh
   cd my-folder
-  git clone https://github.com/lilskyex0x/To-Do-list.git
+  git clone https://github.com/lilskyex0x/Todo-list-with-webpack.git
 ```
 
 ### Usage
