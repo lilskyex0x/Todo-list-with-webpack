@@ -1,21 +1,36 @@
-import _ from 'lodash';
-import printMe from './print.js';
-import './style.css';
+import "./style.css";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "../node_modules/@fortawesome/fontawesome-free/js/all.js";
 
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
+const todoList = document.querySelector(".todolist");
 
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+const tasks = [
+  {
+    description: "Wash clothes",
+    completed: false,
+    index: 1,
+  },
+  {
+    description: "Complete project",
+    completed: false,
+    index: 2,
+  },
 
-    element.appendChild(btn);
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+  {
+    description: "Read books",
+    completed: false,
+    index: 3,
+  },
+];
+
+const dynamicDisplay = () => {
+  tasks.forEach((task) => {
+    todoList.innerHTML += `<li>
+    <input type="checkbox" ${task.index.completed ? "checked" : "unchecked"} />
+    <p>${task.description}</p>
+    <i class="fa fa-ellipsis-v todolisticon" aria-hidden="true"></i>
+   </li>
+   <hr />`;
+  });
+};
+dynamicDisplay();
